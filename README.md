@@ -8,7 +8,7 @@ This is part of Image Processing Project. This is actually a part of the project
   <li>Model Training (Classification model used: RandomForest Classification)
 </ul>
 </br>
-# Motivation
+<h1>Motivation</h1>
 The sole purpose is to help our frontline warriors in anyway possible This model can be used to detect whether a particular person is actually wearing mask or not. Before actual 
 starting working in the project, we have divided our part into three groups: Data Augmentation, Face Detection, Face-Mask Detection. The whole working can be checked in 
 <a href="https://fierce-forest-62094.herokuapp.com/">here</a>.
