@@ -21,7 +21,7 @@ For model developmen, I have used the dataset having 2 main domains: with-mask a
 <h1>Model Used</h1>
 I am part of the Group: Face-Mask Detection, Here all three of my group members have implemeted the same working model via three different models. I have implemented via 
 RandomForest. 
-<br/><u>Why Random Forest?</u>
+<br/><ins>Why Random Forest?</ins>
 <br/> Random Forest is an ensemble algorthim. Here for the development of model, forest of Descision Trees is used. Therfore, this model works effectively for the classification.
 <h1>Implementation</h1>
 I have divided woking model into three parts as I have mentioned before.
@@ -44,7 +44,7 @@ I have divided woking model into three parts as I have mentioned before.
         lesser than this threshold will be dicarded and others having greater than threshold are stored. 
   </li>
   <li>
-    <h1> Model Training </h1>
+    <h3> Model Training </h3>
   Now after Image Pre-Processing and Feature Selection, all we are left with actual model training. For this I have used 300 Descsion trees and criterion: entropy (since this 
   crtiterion works well for information gain.).
   </li>
