@@ -12,7 +12,7 @@ This is part of Image Processing Project. This is actually a part of the project
 The sole purpose is to help our frontline warriors in anyway possible This model can be used to detect whether a particular person is actually wearing mask or not. Before actual 
 starting working in the project, we have divided our part into three groups: Data Augmentation, Face Detection, Face-Mask Detection. The whole working can be checked in 
 <a href="https://fierce-forest-62094.herokuapp.com/">here</a>.
-<br/><u>About Dataset:</u>
+<br/><ins>About Dataset:</ins>
 <br/> The dataset contains around 7600 images out of which around 3700 are with masks and 3800 are without masks.
 <br/>The Dataset is not balanced, this actually works for better results since this will help to extract only certain differnces and train itself accordingly.
 <h1> Dataset Used</h1>
