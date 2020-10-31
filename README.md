@@ -19,7 +19,7 @@ For model developmen, I have used the dataset having 2 main domains: with-mask a
 <br/>The Dataset is not balanced, this actually works for better results since this will help to extract only certain differnces and train itself accordingly.
 <br/> You can find dataset <a href="https://www.kaggle.com/omkargurav/face-mask-dataset">here</a>.
 <h1>Model Used</h1>
-I am part of the Group: Face-Mask Detection, Here all three of my group members have implemeted the same working model via three different models. I have implemented via 
+I am part of the Group: Face-Mask Detection, Here all three of us have implemeted the same working model via three different models. I have implemented via 
 RandomForest. 
 <br/><ins>Why Random Forest?</ins>
 <br/> Random Forest is an ensemble algorthim. Here for the development of model, forest of Descision Trees is used. Therfore, this model works effectively for the classification.
