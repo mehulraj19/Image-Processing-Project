@@ -15,18 +15,18 @@ starting working in the project, we have divided our part into three groups: Dat
 <br/><u>About Dataset:</u>
 <br/> The dataset contains around 7600 images out of which around 3700 are with masks and 3800 are without masks.
 <br/>The Dataset is not balanced, this actually works for better results since this will help to extract only certain differnces and train itself accordingly.
-# Dataset Used.
+<h1> Dataset Used</h1>
 For model developmen, I have used the dataset having 2 main domains: with-mask and without mask.
 <br/> You can find dataset <a href="https://www.kaggle.com/omkargurav/face-mask-dataset">here</a>
-# Model Used
+<h1>Model Used</h1>
 I am part of the Group: Face-Mask Detection, Here all three of my group members have implemeted the same working model via three different models. I have implemented via 
 RandomForest. 
 <br/><u>Why Random Forest?</u>
 <br/> Random Forest is an ensemble algorthim. Here for the development of model, forest of Descision Trees is used. Therfore, this model works effectively for the classification.
-# Implementation
+<h1>Implementation</h1>
 I have divided woking model into three parts as I have mentioned before.
 <ol>
-  <li> ## Image Pre-Processing
+  <li> <h3>Image Pre-Processing</h3>
         <ul>
           <li>For Image Pre-Processing, I have first scaled my Image from RGB into Gray-scale. Reason behind this is that for the model that I am trying to build, colors do not 
           play much significiant role. 
@@ -35,7 +35,7 @@ I have divided woking model into three parts as I have mentioned before.
         </ul>
   </li>
   <li>
-    ## Feature Selection
+    <h3>Feature Selection</h3>
         Feature Selection in literal terms means to select only those features that are actually required for overall model development and extractiong all other that are not. Now
         this actually helps us to reduce the computational cost of model training, also sometimes, by doing this, the features that are actually important, leads to even better 
         accuracy.
@@ -44,12 +44,12 @@ I have divided woking model into three parts as I have mentioned before.
         lesser than this threshold will be dicarded and others having greater than threshold are stored. 
   </li>
   <li>
-  ## Model Training
+    <h1> Model Training </h1>
   Now after Image Pre-Processing and Feature Selection, all we are left with actual model training. For this I have used 300 Descsion trees and criterion: entropy (since this 
   crtiterion works well for information gain.).
   </li>
 </ol>
-# Results
+<h1>Results</h1>
 I have compared the the training accuracy before and after feature selection. 
 <ul>
   <li> Without Feature Selection: 85.84% </li>
