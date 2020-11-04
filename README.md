@@ -23,6 +23,23 @@ I am part of the Group: Face-Mask Detection, Here all three of us have implemete
 RandomForest. 
 <br/><ins>Why Random Forest?</ins>
 <br/> Random Forest is an ensemble algorthim. Here for the development of model, forest of Descision Trees is used. Therfore, this model works effectively for the classification.
+<h1>Different Feature Selection techniques with their Working </h1>
+<ul>
+  <li>
+    <h3>sklearn.feature_selection.SelectFromModel</h3>
+        Here, the feature selection is done via comparison of weights with the threshold value we provide and accordingly prune those having weights less than threshold and 
+        keeping all others. 
+        </br>First we need to provide the estimator or the classification algorithm on which we are actually developing the model. In our case, we are using RandomForest, 
+              therefore, this will be the estimator. Now when we are talking about weights of features, these are usually less for images-type dataset. So, we have given the 
+              threshold as: 0.0001
+  </li>
+  <li>
+  <h3>sklearn.feature_selection.RFE</h3>
+      This feature elimination used greedy search to find the best performing feature dataset. The goal is to select features by recursively considering smaller and smaller 
+      datasets. Here, we first need to give estimator, RandomForest, in our case, then, the selection is done either by taking coef_ into consideration or feature_importances_.
+      Here, we have the flexibility to determine the number of features to prune after each step as well as number of features at the end of the process (If not given,               selection will reduce to half the size).
+  </li>
+</ul>
 <h1>Implementation</h1>
 I have divided woking model into three parts as I have mentioned before.
 <ol>
