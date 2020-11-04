@@ -39,6 +39,12 @@ RandomForest.
       datasets. Here, we first need to give estimator, RandomForest, in our case, then, the selection is done either by taking coef_ into consideration or feature_importances_.
       Here, we have the flexibility to determine the number of features to prune after each step as well as number of features at the end of the process (If not given,               selection will reduce to half the size).
   </li>
+  <li>
+    <h3>sklearn.feature_selection.RFECV</h3>
+    Here, we rank features based on recursive feature elimination and cross-validated selection of the best number of features.
+  <h5>Cross-validation estimator:</h5> This estimator built-on cross-validation capabilties to automatically select the best hyper-parameters.The advantage of using this             estimator that we can use pre-computed results in the previous steps of the cross-validation process. This generally leads to speed improvements.
+ 
+  </li>
 </ul>
 <h1>Implementation</h1>
 I have divided woking model into three parts as I have mentioned before.
