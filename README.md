@@ -41,7 +41,7 @@ RandomForest.
   </li>
   <li>
     <h3>sklearn.feature_selection.RFECV</h3>
-    Here, we rank features based on recursive feature elimination and cross-validated selection of the best number of features.
+    Here, we rank features based on recursive feature elimination and cross-validated selection of the best number of features. Here, we have cv as an extra feature in RFE,        where it takes 5 as default and we can give n-Strategicfolds.
   <h5>Cross-validation estimator:</h5> This estimator built-on cross-validation capabilties to automatically select the best hyper-parameters.The advantage of using this             estimator that we can use pre-computed results in the previous steps of the cross-validation process. This generally leads to speed improvements.
  
   </li>
