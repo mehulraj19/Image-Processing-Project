@@ -76,5 +76,5 @@ I have divided woking model into three parts as I have mentioned before.
 I have compared the the training accuracy before and after feature selection. 
 <ul>
   <li> Without Feature Selection: 85.84% </li>
-  <li>With Feature Selection: 86.24%</li>
+  <li>With Feature Selection (using SelectionFromModel): 86.24%</li>
 <ul>
