@@ -32,18 +32,26 @@ RandomForest.
         </br>First we need to provide the estimator or the classification algorithm on which we are actually developing the model. In our case, we are using RandomForest, 
               therefore, this will be the estimator. Now when we are talking about weights of features, these are usually less for images-type dataset. So, we have given the 
               threshold as: 0.0001
+         </br> <b>How this weighting features actually happens</b>
+         </br>The RandomForest that we have taken for training uses the concepts of 'Embedded Methods' that include 2 things:
+  <ul>
+    <li><ins>Filter:</ins> This uses the correlation to find importance of features</li>
+    <li><ins>Wrapper:</ins> This uses the concept of usefulness after actual training happens. After training, the model assigns weights and importance of the features.</li>
+  </ul>
+  </br> So, the selectionFromModel uses the weights we get from RandomForest and compare it with threshold value we set and prune all those having less than the threshold.
   </li>
+  
   <li>
   <h3>sklearn.feature_selection.RFE</h3>
       This feature elimination used greedy search to find the best performing feature dataset. The goal is to select features by recursively considering smaller and smaller 
       datasets. Here, we first need to give estimator, RandomForest, in our case, then, the selection is done either by taking coef_ into consideration or feature_importances_.
       Here, we have the flexibility to determine the number of features to prune after each step as well as number of features at the end of the process (If not given,               selection will reduce to half the size).
   </li>
+  <br/> SelectionFromModel takes these weights, compare the thresholds we set and then  
   <li>
     <h3>sklearn.feature_selection.RFECV</h3>
     Here, we rank features based on recursive feature elimination and cross-validated selection of the best number of features. Here, we have cv as an extra feature in RFE,        where it takes 5 as default and we can give n-Strategicfolds.<br/>
-  <b><ins>Cross-validation estimator:</b></ins> This estimator built-on cross-validation capabilties to automatically select the best hyper-parameters.The advantage of using this             estimator that we can use pre-computed results in the previous steps of the cross-validation process. This generally leads to speed improvements.
- 
+  <b><ins>Cross-validation estimator:</b></ins> This estimator built-on cross-validation capabilties to automatically select the best hyper-parameters.The advantage of using   this estimator that we can use pre-computed results in the previous steps of the cross-validation process. This generally leads to speed improvements. 
   </li>
 </ul>
 <h1>Implementation</h1>
