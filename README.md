@@ -38,7 +38,7 @@ RandomForest.
     <li><ins>Filter:</ins> This uses the correlation to find importance of features</li>
     <li><ins>Wrapper:</ins> This uses the concept of usefulness after actual training happens. After training, the model assigns weights and importance of the features.</li>
   </ul>
-  </br> So, the selectionFromModel uses the weights we get from RandomForest and compare it with threshold value we set and prune all those having less than the threshold.
+  So, the selectionFromModel uses the weights we get from RandomForest and compare it with threshold value we set and prune all those having less than the threshold.
   </li>
   
   <li>
@@ -47,7 +47,6 @@ RandomForest.
       datasets. Here, we first need to give estimator, RandomForest, in our case, then, the selection is done either by taking coef_ into consideration or feature_importances_.
       Here, we have the flexibility to determine the number of features to prune after each step as well as number of features at the end of the process (If not given,               selection will reduce to half the size).
   </li>
-  <br/> SelectionFromModel takes these weights, compare the thresholds we set and then  
   <li>
     <h3>sklearn.feature_selection.RFECV</h3>
     Here, we rank features based on recursive feature elimination and cross-validated selection of the best number of features. Here, we have cv as an extra feature in RFE,        where it takes 5 as default and we can give n-Strategicfolds.<br/>
