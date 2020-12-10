@@ -13,7 +13,7 @@ The sole purpose is to help our frontline warriors in anyway possible This model
 starting working in the project, we have divided our part into three groups: Data Augmentation, Face Detection, Face-Mask Detection. The whole working can be checked in 
 <a href="https://fierce-forest-62094.herokuapp.com/">here</a>.
 <h1> Dataset Used</h1>
-For model developmen, I have used the dataset having 2 main domains: with-mask and without mask.
+For model development, I have used the dataset having 2 main domains: with-mask and without mask.
 <br/><ins>About Dataset:</ins>
 <br/> The dataset contains around 7600 images out of which around 3700 are with masks and 3800 are without masks.
 <br/>The Dataset is not balanced, this actually works for better results since this will help to extract only certain differnces and train itself accordingly.
