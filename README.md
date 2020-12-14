@@ -85,5 +85,6 @@ I have compared the the training accuracy before and after feature selection.
   <li> Without Feature Selection: 85.84% </li>
   <li>With Feature Selection (using SelectionFromModel): 86.24%</li>
 <ul>
+<br>
 <h1>Further Improvement</h1>
 <p>For this, I have developed Web-App which one can use to classify same. Visit <a href="https://github.com/mehulraj19/Image-Processing-Project-WebApp">here</a> to get the code.</p>
