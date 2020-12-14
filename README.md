@@ -23,6 +23,7 @@ I am part of the Group: Face-Mask Detection, Here all three of us have implemete
 RandomForest. 
 <br/><ins>Why Random Forest?</ins>
 <br/> Random Forest is an ensemble algorthim. Here for the development of model, forest of Descision Trees is used. Therfore, this model works effectively for the classification.
+
 <h1>Different Feature Selection techniques with their Working </h1>
 <ul>
   <li>
@@ -79,6 +80,10 @@ I have divided woking model into three parts as I have mentioned before.
   crtiterion works well for information gain.).
   </li>
 </ol>
+<h1>Further Improvement</h1>
+<p>
+  For this, I have developed Web-App which one can use to classify same. Visit <a href="https://github.com/mehulraj19/Image-Processing-Project-WebApp">here</a> to get the code.
+</p>
 <h1>Results</h1>
 I have compared the the training accuracy before and after feature selection. 
 <ul>
@@ -86,5 +91,4 @@ I have compared the the training accuracy before and after feature selection.
   <li>With Feature Selection (using SelectionFromModel): 86.24%</li>
 <ul>
 <br>
-<h1>Further Improvement</h1>
-<p>For this, I have developed Web-App which one can use to classify same. Visit <a href="https://github.com/mehulraj19/Image-Processing-Project-WebApp">here</a> to get the code.</p>
+
